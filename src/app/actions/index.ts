@@ -1,11 +1,5 @@
-"use server"
-
-import * as auth from '@/auth'
-
-export async function signIn () {
-    return auth.signIn('github')
-}
-
-export async function signOut () {
-    return auth.signOut()
-}
+export { createComments } from './commentscreate'
+export { createPost } from './postcreate'
+export { createTopic } from './topiccreate'
+export { signIn } from './signin'
+export { signOut } from './signout'
